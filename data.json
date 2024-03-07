@@ -1,0 +1,139 @@
+{
+    "trucks": [
+        {
+            "truckName": "Carlos Quesadillas",
+            "truckHours": [
+                {
+                    "Monday": "11:00am - 3:00pm",
+                    "Tuesday": "11:00am - 3:00pm",
+                    "Wednesday": "11:00am - 3:00pm",
+                    "Thursday": "11:00am - 3:00pm",
+                    "Friday": "11:00am - 3:00pm",
+                    "Saturday": "Closed",
+                    "Sunday": "Closed"
+                }
+            ],
+            "imageUrl": "./images/",
+            "logoUrl": "./otherImages/",
+            "menu": [
+                "Burrito: $10-$11",
+                "Quesadilla: $6.50-$9",
+                "Bowls: $10-$11",
+                "Nachos: $11-12",
+                "Chips and Queso: $5.50",
+                "Chips and Guacamole: $6.50"
+            ],
+            "filterTages": [
+                "kildeeHall",
+                "hooverHall",
+                "alergyA"
+            ],
+            "facebookUrl": "https://www.facebook.com/carlosquesadillas/",
+            "otherInfo": [
+                "Phone number: 515-451-8080",
+                "Email: carlosusa1977@hotmail.com",
+                "Instagram: https://www.instagram.com/carlosquesadillas/",
+                "Website: https://www.carlosquesadillas.com/"
+            ]
+        },
+        {
+            "truckName": "Chicago Treats",
+            "truckHours": [
+                {
+                    "Monday": "10:30am - 9:00pm",
+                    "Tuesday": "10:30am - 9:00pm",
+                    "Wednesday": "10:30am - 9:00pm",
+                    "Thursday": "10:30am - 9:00pm",
+                    "Friday": "10:30am - 9:00pm",
+                    "Saturday": "Closed",
+                    "Sunday": "Closed"
+                }
+            ],
+            "imageUrl": "./images/",
+            "logoUrl": "./otherImages/",
+            "menu": [
+                "Italian Beef: $12",
+                "Chicago Dog: $9",
+                "Gyro: $12",
+                "Sweet Beef Sandwich: $12",
+                "Cle Burger: $12",
+                "The Puff: $8",
+                "Maxwell Street Polish: $9",
+                "3pc Chicken Tender: $12",
+                "Salad: $10"
+            ],
+            "filterTages": [
+                "kildeeHall",
+                "alergyA"
+            ],
+            "facebookUrl": "https://www.facebook.com/cleschicagotreats",
+            "otherInfo": [
+                "Phone number: (515) 203-3676",
+                "Email: chicagotreatsiowa@gmail.com",
+                "Instagram: https://www.instagram.com/cleschicagotreats",
+                "Website: https://cles-chicago-treats.square.site/"
+            ]
+        },
+        {
+            "truckName": "The Cheesesteak Factory",
+            "truckHours": [
+                {
+                    "Monday": "11:00am - 2:00pm",
+                    "Tuesday": "11:00am - 2:00pm",
+                    "Wednesday": "11:00am - 2:00pm",
+                    "Thursday": "11:00am - 2:00pm",
+                    "Friday": "11:00am - 2:00pm",
+                    "Saturday": "Closed",
+                    "Sunday": "Closed"
+                }
+            ],
+            "imageUrl": "./images/",
+            "logoUrl": "./otherImages/",
+            "menu": [
+                "$"
+            ],
+            "filterTages": [
+                "carverHall",
+                "alergyA"
+            ],
+            "facebookUrl": "https://www.facebook.com/cheesesteakames",
+            "otherInfo": [
+                "Email: rmitchell.isu@gmail.com",
+                "Twitter: https://twitter.com/cheesesteakisu"
+            ]
+        },
+        {
+            "truckName": "Macubana",
+            "truckHours": [
+                {
+                    "Monday": "-",
+                    "Tuesday": "-",
+                    "Wednesday": "-",
+                    "Thursday": "-",
+                    "Friday": "-",
+                    "Saturday": "-",
+                    "Sunday": "-"
+                }
+            ],
+            "imageUrl": "./images/",
+            "logoUrl": "./otherImages/",
+            "menu": [
+                "cubano sandwich: $7",
+                "tempura mac attack: $6",
+                "belgian fries: $5",
+                "empanadas: $5",
+                "extra sause: $1"
+            ],
+            "filterTages": [
+                "carverHall",
+                "alergyA"
+            ],
+            "facebookUrl": "https://www.facebook.com/macubana.ames",
+            "otherInfo": [
+                "Phone number: (515) 778-5554",
+                "Email: macubana.ames@gmail.com",
+                "Website: https://macubana.com/"
+            ]
+        }
+    ]
+}
