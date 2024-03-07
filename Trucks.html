@@ -25,8 +25,8 @@
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0"
         nonce="4pqyAKwx"></script>
-    <!-- attempt to change background color to #C8102E -->
-    <div class="album py-5 bg-body-tertiary">
+    <!-- one class was deleted in the div below, all functionality was added in-line (style="background-color: #C8102E; --bs-bg-opacity: 1;) This was donw to get the correct background color-->
+    <div class="album py-5" style="background-color: #C8102E; --bs-bg-opacity: 1;">
         <div class="container" style="background-color: #C8102E;">
 
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
@@ -60,9 +60,14 @@
                 <!-- third card starts here (facebook) -->
                 <div class="col">
                     <div class="card shadow-sm">
+                        <!-- removed data-width="240px", this allows  data-adapt-container-width to change the width depending on the size of 
+                            the container, However the page must be reloaded to set the size (this is a facebook thing). AKA the page will go offscreen
+                        if the page is shrunk, until the page is refershed and the width is corrected-->
                         <div class="fb-page" data-href="https://www.facebook.com/carlosquesadillas/"
-                            data-tabs="timeline" data-width="" data-height="" data-small-header="true"
-                            data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                            data-tabs="timeline" data-height="" data-small-header="true"
+                            data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"
+                            style="display: flex; justify-content: center;">
+                            <!-- style above centers the facebook part to be in the center of the div -->
                             <blockquote cite="https://www.facebook.com/carlosquesadillas/"
                                 class="fb-xfbml-parse-ignore"><a
                                     href="https://www.facebook.com/carlosquesadillas/">Carlos Quesadillas</a>
@@ -73,6 +78,7 @@
             </div>
         </div>
     </div>
+    <p>here</p>
 </body>
 
-</html>>
+</html>
