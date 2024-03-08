@@ -10,13 +10,30 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <script src = "data.json"></script>
+    <script src="data.json"></script>
 
     <style>
         .BottomLogo {
             padding: 10px;
-            width: 100%;
-            float: left;
+            float: left; 
+            width: 100%; 
+            max-width: 150px;
+        }
+
+        .bottomBar {
+            display: inline-block;
+            background-color: aliceblue;
+            margin: 50px;
+            border-radius: 6px;
+            display: flex;
+            justify-content: left;
+            min-width: 250px;
+        }
+
+        /* still working on display:___ (find one that matches the layout) */
+        .bottomBarLinks { 
+            width: 80%;
+            display:grid;
         }
     </style>
 
@@ -35,7 +52,7 @@
                 <div class="col">
                     <div class="card shadow-sm">
                         <img src="images/Carlos_Quesadillas.jpg"></img>
-                            
+
                         <div class="card-body">
                             <!-- name of store -->
                             <p style="font-size: 20px; text-align: center;">Carlos Quesadillas</p>
@@ -81,10 +98,12 @@
     </div>
     <!-- working in the yellow area -->
     <!-- still working on this area -->
-    <div style = "display: inline-block; background-color: aliceblue; margin: 50px; border-radius: 6px; margin-left: 70px; margin-right: 400px;">
-        <img class = "BottomLogo" src = "images/Carlos_Quesadilas_Logo.webp" style="width: fit-content; float: left; width: 100%; max-width: 150px; ">
+    <div class= "bottomBar">
+        <img class="BottomLogo" src="images/Carlos_Quesadilas_Logo.webp">
 
-        <p style = "float: right; width: 40%">here</p>
+        <p class = "bottomBarLinks">link number 1</p>
+        <p class = "bottomBarLinks">link number 2</p>
+        <p class = "bottomBarLinks">link number 3</p>
     </div>
 </body>
 
