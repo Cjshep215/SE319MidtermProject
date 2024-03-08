@@ -24,7 +24,7 @@ async function selectTruck(truckNum){
 
 function footerInfo(){
     let i = 1;
-    for (let str in currTruck.otherInfo){
+    for (let str in currTruck.otherInfo && i <= 4){
         document.getElementById("footerInfo" + i).innerHTML=str;
         i++;
     }
@@ -33,6 +33,12 @@ function footerInfo(){
 
 
 //Add for each truck to click in index
-document.getElementById("FIXME - TRUCK 1").addEventListener('click', () => selectTruck(0));
+// document.getElementById("FIXME - TRUCK 1").addEventListener('click', () => selectTruck(0));
 
+
+//For testing
+console.log("started test");
+selectTruck(0);
+console.log("selected truck:", currTruck.truckName);
+footerInfo;
 
