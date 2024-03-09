@@ -61,8 +61,8 @@
             <div class="container">
                 <!-- sidebar -->
                 <a class="nav-link dropdown-toggle navbar-brand" href="#" data-bs-toggle="dropdown"
-                    aria-expanded="false"><strong style = "color: #363636;">Trucks</strong></a>
-                <ul class="dropdown-menu" style = "background-color: aliceblue;">
+                    aria-expanded="false"><strong style="color: #363636;">Trucks</strong></a>
+                <ul class="dropdown-menu" style="background-color: aliceblue;">
                     <li><a class="dropdown-item" href="Trucks.html">Carlos Quesadillas</a></li>
                     <li><a class="dropdown-item" href="Trucks.html">Chicago Treats</a></li>
                     <li><a class="dropdown-item" href="Trucks.html">The Cheesesteak Factory</a></li>
@@ -88,18 +88,26 @@
         <!-- Filter div -->
         <div class="filterDiv">
             <!-- ill make the filters look pretty later -->
+            <h5 id="filterNone" style="text-align: center; background-color: rgb(255, 196, 0);">All Trucks</h5>
             <h4 style="text-decoration: underline; text-align: center;">Filter By</h4>
-            <p>Type</p>
-            <ul>
-                <p>Mexican</p>
-                <p>whatever tf type macabana is</p>
-                <p>Chicago</p>
+            <h6 >Type:</h6>
+            <ul style="text-decoration: double underline;">
+                <p id="filterbyMexican">Mexican</p>
+                <p id="filterbyChicago">Chicago</p>
+                <p id="filterbyNoodle">Noodle</p>
+                <p id="filterbyPhilly">Philly</p>
             </ul>
-            <p>Allergen</p>
-            <ul>
-                <p>egg</p>
-                <p>dairy</p>
-                <p>peanut</p>
+            <h6>Allergen:</h6>
+            <ul style="text-decoration: double underline;">
+                <p id="filterbyEgg">Egg</p>
+                <p id="filterbyDairy">Dairy</p>
+                <p id="filterbyPeanut">Peanut</p>
+            </ul>
+            <h6>Location:</h6>
+            <ul style="text-decoration: double underline;">
+                <p id="filterbyKildee">Kildee Hall</p>
+                <p id="filterbyCarver">Carver Hall</p>
+                <p id="filterbyHoover">Hoover Hall</p>
             </ul>
         </div>
         <!-- List of trucks (this div doesn't currently snap when window gets to small, can use bootstrap for that if needed)-->
