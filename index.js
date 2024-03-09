@@ -22,6 +22,7 @@ function loadTrucks(allTrucks) {
         function addTruck(truck) {
             // console.log(truck);
             let name = truck.truckName;
+            let truckID = truck.truckID;
             let logoUrl = truck.logoUrl;
             let locTagArray = truck.locationTags;
             let foodType = truck.filterTags[0]; //First one is always food type
@@ -29,6 +30,7 @@ function loadTrucks(allTrucks) {
 
 
             let listElementDiv = document.createElement('div');
+            listElementDiv.id = truckID;
             listElementDiv.style.display = 'grid';
             listElementDiv.style.marginBottom = '25px';
 
@@ -180,20 +182,8 @@ function loadTrucks(allTrucks) {
     }
 
 
-
-
-    function footerInfo() {
-        let i = 1;
-        // console.log(`footerInfo${i}`)
-        // console.log(currTruck.otherInfo[i])
-        for (let str of currTruck.otherInfo) {
-            document.getElementById(`footerInfo${i}`).innerHTML = str;
-            i++;
-        }
-    }
-
     
-    filterList('NULL');// add to index load
+    filterList('NULL');
     document.getElementById("filterNone").addEventListener('click', () => {filterList('NULL');})
     document.getElementById("filterbyMexican").addEventListener('click', () => {
         filterList('filterbyMexican');
@@ -210,19 +200,8 @@ function loadTrucks(allTrucks) {
     document.getElementById("filterbyKildee").addEventListener('click', () => {filterList('filterbyKildee');});
     document.getElementById("filterbyCarver").addEventListener('click', () => {filterList('filterbyCarver');});
     document.getElementById("filterbyHoover").addEventListener('click', () => {filterList('filterbyHoover');});
-    // footerInfo(); //add to trucks page load
 
 
+    document.getElementById("carlosQuesadillasTruck").addEventListener('click', () => {window.open("./trucks.html?currTruckID=carlosQuesadillasTruck");});
 
 }
-
-
-//Add for each truck to click in index
-// document.getElementById("FIXME - TRUCK 1").addEventListener('click', () => selectTruck(0));
-
-
-// //For testing
-// console.log("started test");
-// selectTruck(0);
-// footerInfo;
-
