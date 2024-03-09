@@ -15,8 +15,8 @@
     <style>
         .BottomLogo {
             padding: 10px;
-            float: left; 
-            width: 100%; 
+            float: left;
+            width: 100%;
             max-width: 150px;
         }
 
@@ -31,13 +31,44 @@
         }
 
         /* still working on display:___ (find one that matches the layout) */
-        .bottomBarLinks { 
+        .bottomBarLinks {
             width: 80%;
-            display:grid;
+            display: grid;
         }
     </style>
 
 </head>
+
+
+<header>
+    <!-- deleted  shadow-sm and bg-dark and navbar-dark-->
+    <div class="navbar" style="background-color: #F1BE48;">
+        <div class="container">
+            <!-- sidebar -->
+            <a class="nav-link dropdown-toggle navbar-brand" href="#" data-bs-toggle="dropdown"
+                aria-expanded="false"><strong style = "color: #363636;">Dropdown</strong></a>
+            <ul class="dropdown-menu" style = "background-color: aliceblue;">
+                <li><a class="dropdown-item" href="Trucks.html">Carlos Quesadillas</a></li>
+                <li><a class="dropdown-item" href="Trucks.html">Chicago Treats</a></li>
+                <li><a class="dropdown-item" href="Trucks.html">The Cheesesteak Factory</a></li>
+                <li><a class="dropdown-item" href="Trucks.html">Macubana</a></li>
+            </ul>
+            <strong>
+                <p class="navbar-brand d-flex align-items-center" style="margin: 0px; color: #363636;">Food Truck
+                    Tracker</p>
+            </strong>
+            <!-- link to about us page (the link isn't currently working (maybe something to do with strong, could make is a button))-->
+            <a href="aboutUs.html" class="navbar-brand d-flex align-items-center">
+                <strong style="color: #363636;">
+                    <link href="aboutUs.html">About Us</link>
+                </strong>
+            </a>
+
+        </div>
+    </div>
+</header>
+
+
 
 <body style="background-color: #F1BE48;">
     <div id="fb-root"></div>
@@ -98,13 +129,13 @@
     </div>
     <!-- working in the yellow area -->
     <!-- still working on this area -->
-    <div class= "bottomBar">
+    <div class="bottomBar">
         <img class="BottomLogo" src="otherImages/Carlos_Quesadilas_Logo.webp">
 
-        <p class = "bottomBarLinks" style="justify-content: center;" id="footerInfo1">link number 1</p>
-        <p class = "bottomBarLinks" style="justify-content: center;" id="footerInfo2">link number 2</p>
-        <p class = "bottomBarLinks" style="justify-content: center;" id="footerInfo3">link number 3</p>
-        <p class = "bottomBarLinks" style="justify-content: center;" id="footerInfo4">link number 4</p>
+        <p class="bottomBarLinks" style="justify-content: center;" id="footerInfo1">link number 1</p>
+        <p class="bottomBarLinks" style="justify-content: center;" id="footerInfo2">link number 2</p>
+        <p class="bottomBarLinks" style="justify-content: center;" id="footerInfo3">link number 3</p>
+        <p class="bottomBarLinks" style="justify-content: center;" id="footerInfo4">link number 4</p>
     </div>
     <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2024 Team: 103</span>
 </body>
