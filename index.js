@@ -6,13 +6,16 @@ let currTruck;
 fetch("./data.json").then(response => response.json()).then(allTrucks => loadTrucks(allTrucks));
 
 function loadTrucks(allTrucks) {
-    console.log("Trucks:", allTrucks);
+    // console.log("Trucks:", allTrucks);
     currTruck = allTrucks.trucks[0];
-    console.log("->", currTruck);
+    // console.log("->", currTruck);
 
     function filterList(filterStr) {
-        console.log("->", currTruck);
-        var listContainer = document.getElementById("truckListContainer");
+        // console.log("->", currTruck);
+        var listContainer;
+        if (!(listContainer = document.getElementById("truckListContainer"))) {
+            return;
+        }
         listContainer.replaceChildren();
 
 
