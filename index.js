@@ -135,6 +135,36 @@ function loadTrucks(allTrucks) {
                     }
                 }
                 break;
+            case 'filterbyCarver':
+                for (let i = 0; i < allTrucks.trucks.length; i++) {
+                    let truck = allTrucks.trucks[i];
+                    for (let k = 0; k < truck.locationTags.length; k++){
+                        if (truck.locationTags[k] == "carverHall") {
+                            addTruck(truck);
+                        }
+                    }
+                }
+                break;
+            case 'filterbyKildee':
+                for (let i = 0; i < allTrucks.trucks.length; i++) {
+                    let truck = allTrucks.trucks[i];
+                    for (let k = 0; k < truck.locationTags.length; k++){
+                        if (truck.locationTags[k] == "kildeeHall") {
+                            addTruck(truck);
+                        }
+                    }
+                }
+                break;
+            case 'filterbyHoover':
+                for (let i = 0; i < allTrucks.trucks.length; i++) {
+                    let truck = allTrucks.trucks[i];
+                    for (let k = 0; k < truck.locationTags.length; k++){
+                        if (truck.locationTags[k] == "hooverHall") {
+                            addTruck(truck);
+                        }
+                    }
+                }
+                break;
             default: //All trucks
                 for (let i = 0; i < allTrucks.trucks.length; i++) {
 
@@ -161,16 +191,22 @@ function loadTrucks(allTrucks) {
 
     
     filterList('NULL');// add to index load
+    document.getElementById("filterNone").addEventListener('click', () => {filterList('NULL');})
     document.getElementById("filterbyMexican").addEventListener('click', () => {
         filterList('filterbyMexican');
-        document.getElementById("filterbyMexican").style.backgroundColor = 'rgb(255, 196, 0)';
+        // document.getElementById("filterbyMexican").style.backgroundColor = 'rgb(255, 196, 0)';
     });
-    document.getElementById("filterbyChicago").addEventListener('click', () => {filterList('filterbyChicago')});
-    document.getElementById("filterbyMexican").addEventListener('click', () => {filterList('filterbyMexican')});
-    document.getElementById("filterbyMexican").addEventListener('click', () => {filterList('filterbyMexican')});
-    document.getElementById("filterbyMexican").addEventListener('click', () => {filterList('filterbyMexican')});
-    document.getElementById("filterbyMexican").addEventListener('click', () => {filterList('filterbyMexican')});
-    document.getElementById("filterbyMexican").addEventListener('click', () => {filterList('filterbyMexican')});
+    document.getElementById("filterbyChicago").addEventListener('click', () => {filterList('filterbyChicago');});
+    document.getElementById("filterbyNoodle").addEventListener('click', () => {filterList('filterbyNoodle');});
+    document.getElementById("filterbyPhilly").addEventListener('click', () => {filterList('filterbyPhilly');});
+
+    document.getElementById("filterbyEgg").addEventListener('click', () => {filterList('filterbyEgg');});
+    document.getElementById("filterbyDairy").addEventListener('click', () => {filterList('filterbyDairy');});
+    document.getElementById("filterbyPeanut").addEventListener('click', () => {filterList('filterbyPeanut');});
+
+    document.getElementById("filterbyKildee").addEventListener('click', () => {filterList('filterbyKildee');});
+    document.getElementById("filterbyCarver").addEventListener('click', () => {filterList('filterbyCarver');});
+    document.getElementById("filterbyHoover").addEventListener('click', () => {filterList('filterbyHoover');});
     // footerInfo(); //add to trucks page load
 
 
