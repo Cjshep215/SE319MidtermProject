@@ -23,9 +23,12 @@
                 "Chips and Queso: $5.50",
                 "Chips and Guacamole: $6.50"
             ],
-            "filterTages": [
+            "locationTags": [
                 "kildeeHall",
-                "hooverHall",
+                "hooverHall"
+            ],
+            "filterTags": [
+                "Mexican",
                 "alergyA##"
             ],
             "facebookUrl": "https://www.facebook.com/carlosquesadillas/",
@@ -62,8 +65,11 @@
                 "3pc Chicken Tender: $12",
                 "Salad: $10"
             ],
-            "filterTages": [
-                "kildeeHall",
+            "locationTags": [
+                "kildeeHall"
+            ],
+            "filterTags": [
+                "Chicago",
                 "alergyA##"
             ],
             "facebookUrl": "https://www.facebook.com/cleschicagotreats",
@@ -94,8 +100,11 @@
                 "1/3 Pound: $10",
                 "Combination (2 meats): $10"
             ],
-            "filterTages": [
-                "carverHall",
+            "locationTags": [
+                "carverHall"
+            ],
+            "filterTags": [
+                "Philly",
                 "alergyA##"
             ],
             "facebookUrl": "https://www.facebook.com/cheesesteakames",
@@ -126,8 +135,11 @@
                 "empanadas: $5",
                 "extra sause: $1"
             ],
-            "filterTages": [
-                "carverHall",
+            "locationTags": [
+                "carverHall"
+            ],
+            "filterTags": [
+                "Noodle",
                 "alergyA##"
             ],
             "facebookUrl": "https://www.facebook.com/macubana.ames",

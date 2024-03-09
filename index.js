@@ -15,7 +15,7 @@ async function fetchTrucks() {
     });
 }
 
-async function selectTruck(truckNum){
+async function selectTruck(truckNum) {
     let allTrucks;
     fetch("./data.json").then(response => response.json()).then(data => {
         allTrucks = data;
@@ -39,30 +39,99 @@ async function selectTruck(truckNum){
 
 fetch("./data.json").then(response => response.json()).then(allTrucks => loadTrucks(allTrucks));
 
-function loadTrucks(allTrucks){
+function loadTrucks(allTrucks) {
     console.log("Trucks:", allTrucks);
     currTruck = allTrucks.trucks[0];
-    console.log("->",currTruck);
-    
-    function filterList(){
-        console.log("->",currTruck);
-        
+    console.log("->", currTruck);
+
+    function filterList(filterStr) {
+        console.log("->", currTruck);
+        var listContainer = document.getElementById("truckListContainer");
+        listContainer.replaceChildren();
+
+        switch (filterStr) {
+            //FIX ME add filter
+            default: //All trucks
+                for (let i = 0; i < allTrucks.trucks.length; i++) {
+                    let truck = allTrucks.trucks[i];
+                    // console.log(truck);
+                    let name = truck.truckName;
+                    let logoUrl = truck.logoUrl;
+                    let locTagArray = truck.locationTags;
+                    let foodType = truck.filterTags[0]; //First one is always food type
+                    // console.log(name, logoUrl, locTagArray, foodType);
+
+
+                    let listElementDiv = document.createElement('div');
+                    listElementDiv.style.display = 'grid';
+                    listElementDiv.style.marginBottom = '25px';
+                    
+                    let listGridDiv = document.createElement('div');
+                    listGridDiv.style.display = 'inline-flex';
+
+                    
+                    let listLogoDiv = document.createElement('div');
+                    listLogoDiv.innerHTML = `
+                        <div style="width: 80px;"><img src=${logoUrl} class="logo" alt = "Logo for ${name}"></div>
+                    `;
+                    
+                    
+                    let listNameDiv = document.createElement('div');
+                    listNameDiv.innerHTML = `
+                        <div style="padding: 10px;">
+                            <h3 style="left: 100%; text-decoration: underline;" ;>${name}</h3>
+                            <h6 style="text-align: center;">${foodType}</h6>
+                        </div>
+                    `;
+
+                    listGridDiv.replaceChildren(listLogoDiv, listNameDiv);
+
+                    for (let j = 0; j < locTagArray.length; j++){
+                        let tag = locTagArray[j]; 
+                        let listLocH5 = document.createElement('h5');
+                        let locStr;
+                        switch (tag){
+                            case 'hooverHall':
+                                locStr = "Hoover Hall"
+                                break;
+                            case 'carverHall':
+                                locStr = "Carver Hall"
+                                break;
+                            case 'kildeeHall':
+                                locStr = "Kildee Hall"
+                                break;
+                            default:
+                                locStr = "Error";
+                            break;
+                        }
+                        listLocH5.innerHTML = ` 
+                            <h5 style="margin-top: 8px; height: auto;padding-top: 6px;">(${locStr})</h5>
+                        `;
+                        listGridDiv.appendChild(listLocH5);
+                    }
+                    
+                    listElementDiv.replaceChildren(listGridDiv);
+                    listContainer.appendChild(listElementDiv);
+                }
+        }
+
     }
 
-    
-    
-    
-    function footerInfo(){
+
+
+
+    function footerInfo() {
         let i = 1;
         // console.log(`footerInfo${i}`)
         // console.log(currTruck.otherInfo[i])
-        for (let str of currTruck.otherInfo){
-            document.getElementById(`footerInfo${i}`).innerHTML=str;
+        for (let str of currTruck.otherInfo) {
+            document.getElementById(`footerInfo${i}`).innerHTML = str;
             i++;
         }
     }
-    filterList();
-    footerInfo();
+    filterList('NULL');// add to index load
+    // footerInfo(); //add to trucks load
+
 }
 
 
