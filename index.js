@@ -204,7 +204,7 @@ function loadTrucks(allTrucks) {
 
     document.getElementById("carlosQuesadillasTruck").addEventListener('click', () => {window.open("./trucks.html?currTruckID=carlosQuesadillasTruck");});
     document.getElementById("chicagoTreatsTruck").addEventListener('click', () => {window.open("./trucks.html?currTruckID=chicagoTreatsTruck");});
-    document.getElementById("cheeseSteakFactoryTruck").addEventListener('click', () => {window.open("./trucks.html?currTruckID=cheeseSteakFactoryTruck");});
+    document.getElementById("cheesesteakFactoryTruck").addEventListener('click', () => {window.open("./trucks.html?currTruckID=cheesesteakFactoryTruck");});
     document.getElementById("macubanaTruck").addEventListener('click', () => {window.open("./trucks.html?currTruckID=macubanaTruck");});
 
 }
