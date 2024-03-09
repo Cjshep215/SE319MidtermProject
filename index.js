@@ -25,7 +25,7 @@ async function selectTruck(truckNum){
 function footerInfo(){
     let i = 1;
     for (let str in currTruck.otherInfo && i <= 4){
-        document.getElementById("footerInfo" + i).innerHTML=str;
+        document.getElementById(`footerInfo${i}`).innerHTML=str;
         i++;
     }
 }
