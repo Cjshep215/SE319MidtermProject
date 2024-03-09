@@ -18,6 +18,8 @@
             float: left;
             width: 100%;
             max-width: 150px;
+            max-height: 150px;
+            vertical-align: middle;
         }
 
         .bottomBar {
@@ -32,8 +34,9 @@
 
         /* still working on display:___ (find one that matches the layout) */
         .bottomBarLinks {
-            width: 80%;
+            width: fit-content;
             display: grid;
+
         }
     </style>
 
@@ -133,10 +136,13 @@
     <div class="bottomBar">
         <img class="BottomLogo" src="otherImages/Carlos_Quesadilas_Logo.webp">
 
-        <p class="bottomBarLinks" id="footerInfo1">link number 1</p>
-        <p class="bottomBarLinks" id="footerInfo2">link number 2</p>
-        <p class="bottomBarLinks"  id="footerInfo3">link number 3</p>
-        <p class="bottomBarLinks"  id="footerInfo4">link number 4</p>
+        <div style="display: block; margin-left: 20px; text-decoration: underline;">
+            <p class="bottomBarLinks" id="footerInfo1">link number 1</p>
+            <p class="bottomBarLinks" id="footerInfo2">link number 2</p>
+            <p class="bottomBarLinks" id="footerInfo3">link number 3</p>
+            <p class="bottomBarLinks" id="footerInfo4">link number 4</p>
+        </div>
+
     </div>
     <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2024 Team: 103</span>
 </body>
