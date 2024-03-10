@@ -28,7 +28,7 @@ function loadTrucks(allTrucks) {
     let locationTagsArray = currTruck.locationTags;
     let facebookUrl = currTruck.facebookUrl;
 
-    console.log("name",name);
+    console.log("name", name);
     console.log("hoursArray", hoursArray);
     console.log("imageUrl", imageUrl);
     console.log("logoUrl", logoUrl);
@@ -36,48 +36,48 @@ function loadTrucks(allTrucks) {
     console.log(locationTagsArray);
     console.log(facebookUrl);
 
+    document.getElementById('truckImage').src = imageUrl;
+    document.getElementById('truckImage').alt = `Image of ${name}`;
+
+
     document.getElementById('truckName').textContent = name;
 
     let truckLocationElement = document.getElementById('truckLocation');
-    let locStrTmp = "123";
- 
-    console.log(locStrTmp);
-    for (let i = 0; i < locationTagsArray.length; i++) {
-        console.log(locStrTmp);
-        if (i = 0) {
-            // switch (locationTagsArray[i]) {
-            //     case 'carverHall':
-            //         locStrTmp.concat("Carver Hall");
-            //         break;
-            //     case 'hooverHall':
-            //         locStrTmp.concat("Hoover Hall");
-            //         break;
-            //     case 'kildeeHall':
-            //         locStrTmp.concat("Kildee Hall");
-            //         break;
-            //     default:
-            //         break;
-            // }
-            locStrTmp.concat("4");
+    let locStrTmp = "";
 
-        }
-        // switch (locationTagsArray[i]) {
-        //     case 'carverHall':
-        //         locStrTmp.concat("& Carver Hall");
-        //         break;
-        //     case 'hooverHall':
-        //         locStrTmp.concat("& Hoover Hall");
-        //         break;
-        //     case 'kildeeHall':
-        //         locStrTmp.concat("& Kildee Hall");
-        //         break;
-        //     default:
-        //         break;
-        // }
-        locStrTmp.concat("5");
+    switch (locationTagsArray[0]) {
+        case 'carverHall':
+            locStrTmp = "Carver Hall";
+            break;
+        case 'hooverHall':
+            locStrTmp = "Hoover Hall";
+            break;
+        case 'kildeeHall':
+            locStrTmp = "Kildee Hall";
+            break;
+        default:
+            break;
     }
 
-    console.log(locStrTmp);
+
+    if (locationTagsArray.length > 1) {
+        console.log("big");
+        switch (locationTagsArray[1]) {
+            case 'carverHall':
+                locStrTmp = locStrTmp.concat(" & Carver Hall");
+                break;
+            case 'hooverHall':
+                locStrTmp = locStrTmp.concat(" & Hoover Hall");
+                break;
+            case 'kildeeHall':
+                locStrTmp = locStrTmp.concat(" & Kildee Hall");
+                break;
+            default:
+                break;
+        }
+    }
+
+    truckLocationElement.textContent = locStrTmp;
 
 
 
