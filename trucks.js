@@ -80,15 +80,15 @@ function loadTrucks(allTrucks) {
         hourElement.textContent = hoursArray[h];
         hoursDiv.appendChild(hourElement);
     }
-    
-    
-    
+
+
+
     // console.log(menuArray);
-    
+
     let menuDiv = document.getElementById("menuCard");
     menuDiv.replaceChildren();
-    
-    for (let m = 0; m < menuArray.length; m++){
+
+    for (let m = 0; m < menuArray.length; m++) {
         let menuElement = document.createElement('p');
         menuElement.classList = "card-text menu-item";
         menuElement.textContent = menuArray[m];
@@ -118,16 +118,16 @@ function loadTrucks(allTrucks) {
 
 
     function footerInfo() {
-        let i = 1;
-        // console.log(`footerInfo${i}`)
-        // console.log(currTruck.otherInfo[i])
+        let footerDiv = document.getElementById("footerLinkDiv");
+        footerDiv.replaceChildren();
+
         for (let str of currTruck.otherInfo) {
-            document.getElementById(`footerInfo${i}`).innerHTML = str;
-            i++;
+            let footerInfo = document.createElement('p');
+            footerInfo.classList = "bottomBarLinks";
+            footerInfo.innerHTML = str;
+            footerDiv.appendChild(footerInfo);
         }
     }
-
-
 
     footerInfo();
 }
