@@ -117,13 +117,13 @@
             "truckName": "Macubana",
             "truckID": "macubanaTruck",
             "truckHours": [
-                "Monday: ##-##",
-                "Tuesday: ##-##",
-                "Wednesday: ##-##",
-                "Thursday: ##-##",
-                "Friday: ##-##",
-                "Saturday: ##-##",
-                "Sunday: ##-##"
+                "Monday: 11:00am - 2:00pm",
+                "Tuesday: 11:00am - 2:00pm",
+                "Wednesday: 11:00am - 2:00pm",
+                "Thursday: 11:00am - 2:00pm",
+                "Friday: 11:00am - 2:00pm",
+                "Saturday: Closed",
+                "Sunday: Closed"
             ],
             "imageUrl": "./images/Macubana.jpg",
             "logoUrl": "./otherImages/Macubana_Logo.jpg",
