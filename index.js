@@ -18,7 +18,7 @@ function loadTrucks(allTrucks) {
         }
         listContainer.replaceChildren();
 
-        
+
         function addTruck(truck) {
             // console.log(truck);
             let name = truck.truckName;
@@ -81,7 +81,7 @@ function loadTrucks(allTrucks) {
             listElementDiv.replaceChildren(listGridDiv);
             listContainer.appendChild(listElementDiv);
 
-            document.getElementById(truckID).addEventListener('click', () => {window.open(`Trucks.html?currTruckID=${truckID}`, "_self");});
+            document.getElementById(truckID).addEventListener('click', () => { window.open(`Trucks.html?currTruckID=${truckID}`, "_self"); });
 
         }
 
@@ -122,31 +122,37 @@ function loadTrucks(allTrucks) {
             case 'filterbyEgg':
                 for (let i = 0; i < allTrucks.trucks.length; i++) {
                     let truck = allTrucks.trucks[i];
-                    if (truck.filterTags[0] == "Egg") {
-                        addTruck(truck);
+                    for (let k = 0; k < truck.filterTags.length; k++) {
+                        if (truck.filterTags[k] == "Egg") {
+                            addTruck(truck);
+                        }
                     }
                 }
                 break;
             case 'filterbyDairy':
                 for (let i = 0; i < allTrucks.trucks.length; i++) {
                     let truck = allTrucks.trucks[i];
-                    if (truck.filterTags[0] == "Dairy") {
-                        addTruck(truck);
+                    for (let k = 0; k < truck.filterTags.length; k++) {
+                        if (truck.filterTags[k] == "Dairy") {
+                            addTruck(truck);
+                        }
                     }
                 }
                 break;
             case 'filterbyPeanut':
                 for (let i = 0; i < allTrucks.trucks.length; i++) {
                     let truck = allTrucks.trucks[i];
-                    if (truck.filterTags[0] == "Peanut") {
-                        addTruck(truck);
+                    for (let k = 0; k < truck.filterTags.length; k++) {
+                        if (truck.filterTags[k] == "Peanut") {
+                            addTruck(truck);
+                        }
                     }
                 }
                 break;
             case 'filterbyCarver':
                 for (let i = 0; i < allTrucks.trucks.length; i++) {
                     let truck = allTrucks.trucks[i];
-                    for (let k = 0; k < truck.locationTags.length; k++){
+                    for (let k = 0; k < truck.locationTags.length; k++) {
                         if (truck.locationTags[k] == "carverHall") {
                             addTruck(truck);
                         }
@@ -156,7 +162,7 @@ function loadTrucks(allTrucks) {
             case 'filterbyKildee':
                 for (let i = 0; i < allTrucks.trucks.length; i++) {
                     let truck = allTrucks.trucks[i];
-                    for (let k = 0; k < truck.locationTags.length; k++){
+                    for (let k = 0; k < truck.locationTags.length; k++) {
                         if (truck.locationTags[k] == "kildeeHall") {
                             addTruck(truck);
                         }
@@ -166,7 +172,7 @@ function loadTrucks(allTrucks) {
             case 'filterbyHoover':
                 for (let i = 0; i < allTrucks.trucks.length; i++) {
                     let truck = allTrucks.trucks[i];
-                    for (let k = 0; k < truck.locationTags.length; k++){
+                    for (let k = 0; k < truck.locationTags.length; k++) {
                         if (truck.locationTags[k] == "hooverHall") {
                             addTruck(truck);
                         }
@@ -185,24 +191,24 @@ function loadTrucks(allTrucks) {
     }
 
 
-    
+
     filterList('NULL');
-    document.getElementById("filterNone").addEventListener('click', () => {filterList('NULL');})
+    document.getElementById("filterNone").addEventListener('click', () => { filterList('NULL'); })
     document.getElementById("filterbyMexican").addEventListener('click', () => {
         filterList('filterbyMexican');
         // document.getElementById("filterbyMexican").style.backgroundColor = 'rgb(255, 196, 0)';
     });
-    document.getElementById("filterbyChicago").addEventListener('click', () => {filterList('filterbyChicago');});
-    document.getElementById("filterbyNoodle").addEventListener('click', () => {filterList('filterbyNoodle');});
-    document.getElementById("filterbyPhilly").addEventListener('click', () => {filterList('filterbyPhilly');});
+    document.getElementById("filterbyChicago").addEventListener('click', () => { filterList('filterbyChicago'); });
+    document.getElementById("filterbyNoodle").addEventListener('click', () => { filterList('filterbyNoodle'); });
+    document.getElementById("filterbyPhilly").addEventListener('click', () => { filterList('filterbyPhilly'); });
 
-    document.getElementById("filterbyEgg").addEventListener('click', () => {filterList('filterbyEgg');});
-    document.getElementById("filterbyDairy").addEventListener('click', () => {filterList('filterbyDairy');});
-    document.getElementById("filterbyPeanut").addEventListener('click', () => {filterList('filterbyPeanut');});
+    document.getElementById("filterbyEgg").addEventListener('click', () => { filterList('filterbyEgg'); });
+    document.getElementById("filterbyDairy").addEventListener('click', () => { filterList('filterbyDairy'); });
+    document.getElementById("filterbyPeanut").addEventListener('click', () => { filterList('filterbyPeanut'); });
 
-    document.getElementById("filterbyKildee").addEventListener('click', () => {filterList('filterbyKildee');});
-    document.getElementById("filterbyCarver").addEventListener('click', () => {filterList('filterbyCarver');});
-    document.getElementById("filterbyHoover").addEventListener('click', () => {filterList('filterbyHoover');});
+    document.getElementById("filterbyKildee").addEventListener('click', () => { filterList('filterbyKildee'); });
+    document.getElementById("filterbyCarver").addEventListener('click', () => { filterList('filterbyCarver'); });
+    document.getElementById("filterbyHoover").addEventListener('click', () => { filterList('filterbyHoover'); });
 
 
 }

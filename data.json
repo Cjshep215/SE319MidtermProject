@@ -28,7 +28,9 @@
             ],
             "filterTags": [
                 "Mexican",
-                "alergyA##"
+                "Egg",
+                "Dairy",
+                "Peanut"
             ],
             "facebookUrl": "https://www.facebook.com/carlosquesadillas/",
             "otherInfo": [
@@ -68,7 +70,8 @@
             ],
             "filterTags": [
                 "Chicago",
-                "alergyA##"
+                "Dairy",
+                "Egg"
             ],
             "facebookUrl": "https://www.facebook.com/ChicagoTreats/",
             "otherInfo": [
@@ -102,7 +105,7 @@
             ],
             "filterTags": [
                 "Philly",
-                "alergyA##"
+                "Egg"
             ],
             "facebookUrl": "https://www.facebook.com/cheesesteakames",
             "otherInfo": [
@@ -136,7 +139,7 @@
             ],
             "filterTags": [
                 "Noodle",
-                "alergyA##"
+                "Peanut"
             ],
             "facebookUrl": "https://www.facebook.com/macubana.ames",
             "otherInfo": [
