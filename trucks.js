@@ -28,13 +28,6 @@ function loadTrucks(allTrucks) {
     let locationTagsArray = currTruck.locationTags;
     let facebookUrl = currTruck.facebookUrl;
 
-    console.log("name", name);
-    console.log("hoursArray", hoursArray);
-    console.log("imageUrl", imageUrl);
-    console.log("logoUrl", logoUrl);
-    console.log(menuArray);
-    console.log(locationTagsArray);
-    console.log(facebookUrl);
 
     document.getElementById('truckImage').src = imageUrl;
     document.getElementById('truckImage').alt = `Image of ${name}`;
@@ -58,10 +51,7 @@ function loadTrucks(allTrucks) {
         default:
             break;
     }
-
-
     if (locationTagsArray.length > 1) {
-        console.log("big");
         switch (locationTagsArray[1]) {
             case 'carverHall':
                 locStrTmp = locStrTmp.concat(" & Carver Hall");
@@ -80,6 +70,51 @@ function loadTrucks(allTrucks) {
     truckLocationElement.textContent = locStrTmp;
 
 
+    let hoursDiv = document.getElementById('hoursDiv');
+    hoursDiv.replaceChildren();
+
+
+    for (let h = 0; h < hoursArray.length; h++) {
+        let hourElement = document.createElement('p');
+        hourElement.classList = "card-text hour-item";
+        hourElement.textContent = hoursArray[h];
+        hoursDiv.appendChild(hourElement);
+    }
+    
+    
+    
+    // console.log(menuArray);
+    
+    let menuDiv = document.getElementById("menuCard");
+    menuDiv.replaceChildren();
+    
+    for (let m = 0; m < menuArray.length; m++){
+        let menuElement = document.createElement('p');
+        menuElement.classList = "card-text menu-item";
+        menuElement.textContent = menuArray[m];
+        menuDiv.appendChild(menuElement);
+    }
+
+
+
+    console.log(facebookUrl);
+    // TODO - Does this work??
+    document.getElementById('facebookFeed').innerHTML = `
+        <div class="fb-page" data-href="${facebookUrl}"
+            data-tabs="timeline" data-height="" data-small-header="true"
+            data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"
+            style="display: flex; justify-content: center;">
+            <!-- style above centers the facebook part to be in the center of the div -->
+            <blockquote cite="${facebookUrl}"
+                class="fb-xfbml-parse-ignore"><a
+                    href="${facebookUrl}">${name}</a>
+            </blockquote>
+        </div>
+    `;
+
+
+    document.getElementById('footerLogo').src = logoUrl;
+    document.getElementById('footerLogo').alt = `Logo for ${name}`;
 
 
 

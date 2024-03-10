@@ -4,15 +4,13 @@
             "truckName": "Carlos Quesadillas",
             "truckID": "carlosQuesadillasTruck",
             "truckHours": [
-                {
-                    "Monday": "11:00am - 3:00pm",
-                    "Tuesday": "11:00am - 3:00pm",
-                    "Wednesday": "11:00am - 3:00pm",
-                    "Thursday": "11:00am - 3:00pm",
-                    "Friday": "11:00am - 3:00pm",
-                    "Saturday": "Closed",
-                    "Sunday": "Closed"
-                }
+                "Monday: 11:00am - 3:00pm",
+                "Tuesday: 11:00am - 3:00pm",
+                "Wednesday: 11:00am - 3:00pm",
+                "Thursday: 11:00am - 3:00pm",
+                "Friday: 11:00am - 3:00pm",
+                "Saturday: Closed",
+                "Sunday: Closed"
             ],
             "imageUrl": "./images/Carlos_Quesadillas.jpg",
             "logoUrl": "./otherImages/Carlos_Quesadilas_Logo.webp",
@@ -44,15 +42,13 @@
             "truckName": "Chicago Treats",
             "truckID": "chicagoTreatsTruck",
             "truckHours": [
-                {
-                    "Monday": "10:30am - 9:00pm",
-                    "Tuesday": "10:30am - 9:00pm",
-                    "Wednesday": "10:30am - 9:00pm",
-                    "Thursday": "10:30am - 9:00pm",
-                    "Friday": "10:30am - 9:00pm",
-                    "Saturday": "Closed",
-                    "Sunday": "Closed"
-                }
+                "Monday: 10:30am - 9:00pm",
+                "Tuesday: 10:30am - 9:00pm",
+                "Wednesday: 10:30am - 9:00pm",
+                "Thursday: 10:30am - 9:00pm",
+                "Friday: 10:30am - 9:00pm",
+                "Saturday: Closed",
+                "Sunday: Closed"
             ],
             "imageUrl": "./images/Chicago_Treats.jpg",
             "logoUrl": "./otherImages/Chicago_Treats_Logo.webp",
@@ -86,15 +82,13 @@
             "truckName": "The Cheesesteak Factory",
             "truckID": "cheesesteakFactoryTruck",
             "truckHours": [
-                {
-                    "Monday": "11:00am - 2:00pm",
-                    "Tuesday": "11:00am - 2:00pm",
-                    "Wednesday": "11:00am - 2:00pm",
-                    "Thursday": "11:00am - 2:00pm",
-                    "Friday": "11:00am - 2:00pm",
-                    "Saturday": "Closed",
-                    "Sunday": "Closed"
-                }
+                "Monday: 11:00am - 2:00pm",
+                "Tuesday: 11:00am - 2:00pm",
+                "Wednesday: 11:00am - 2:00pm",
+                "Thursday: 11:00am - 2:00pm",
+                "Friday: 11:00am - 2:00pm",
+                "Saturday: Closed",
+                "Sunday: Closed"
             ],
             "imageUrl": "./images/Cheese_Steak_Factory.jpg",
             "logoUrl": "./otherImages/Cheese_Steak_Factory_Logo.jpg",
@@ -120,24 +114,22 @@
             "truckName": "Macubana",
             "truckID": "macubanaTruck",
             "truckHours": [
-                {
-                    "Monday": "##-##",
-                    "Tuesday": "##-##",
-                    "Wednesday": "##-##",
-                    "Thursday": "##-##",
-                    "Friday": "##-##",
-                    "Saturday": "##-##",
-                    "Sunday": "##-##"
-                }
+                "Monday: ##-##",
+                "Tuesday: ##-##",
+                "Wednesday: ##-##",
+                "Thursday: ##-##",
+                "Friday: ##-##",
+                "Saturday: ##-##",
+                "Sunday: ##-##"
             ],
             "imageUrl": "./images/Macubana.jpg",
             "logoUrl": "./otherImages/Macubana_Logo.jpg",
             "menu": [
-                "cubano sandwich: $7",
-                "tempura mac attack: $6",
-                "belgian fries: $5",
-                "empanadas: $5",
-                "extra sause: $1"
+                "Cubano Sandwich: $7",
+                "Tempura Mac Attack: $6",
+                "Belgian Fries: $5",
+                "Empanadas: $5",
+                "Extra sause: $1"
             ],
             "locationTags": [
                 "carverHall"

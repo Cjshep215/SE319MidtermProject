@@ -18,7 +18,7 @@ function loadTrucks(allTrucks) {
         }
         listContainer.replaceChildren();
 
-
+        
         function addTruck(truck) {
             // console.log(truck);
             let name = truck.truckName;
@@ -80,6 +80,9 @@ function loadTrucks(allTrucks) {
 
             listElementDiv.replaceChildren(listGridDiv);
             listContainer.appendChild(listElementDiv);
+
+            document.getElementById(truckID).addEventListener('click', () => {window.open(`./trucks.html?currTruckID=${truckID}`, "_self");});
+
         }
 
 
@@ -202,9 +205,9 @@ function loadTrucks(allTrucks) {
     document.getElementById("filterbyHoover").addEventListener('click', () => {filterList('filterbyHoover');});
 
 
-    document.getElementById("carlosQuesadillasTruck").addEventListener('click', () => {window.open("./trucks.html?currTruckID=carlosQuesadillasTruck", "_self");});
-    document.getElementById("chicagoTreatsTruck").addEventListener('click', () => {window.open("./trucks.html?currTruckID=chicagoTreatsTruck", "_self");});
-    document.getElementById("cheesesteakFactoryTruck").addEventListener('click', () => {window.open("./trucks.html?currTruckID=cheesesteakFactoryTruck", "_self");});
-    document.getElementById("macubanaTruck").addEventListener('click', () => {window.open("./trucks.html?currTruckID=macubanaTruck", "_self");});
+    // document.getElementById("carlosQuesadillasTruck").addEventListener('click', () => {window.open("./trucks.html?currTruckID=carlosQuesadillasTruck", "_self");});
+    // document.getElementById("chicagoTreatsTruck").addEventListener('click', () => {window.open("./trucks.html?currTruckID=chicagoTreatsTruck", "_self");});
+    // document.getElementById("cheesesteakFactoryTruck").addEventListener('click', () => {window.open("./trucks.html?currTruckID=cheesesteakFactoryTruck", "_self");});
+    // document.getElementById("macubanaTruck").addEventListener('click', () => {window.open("./trucks.html?currTruckID=macubanaTruck", "_self");});
 
 }
