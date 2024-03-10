@@ -97,8 +97,7 @@ function loadTrucks(allTrucks) {
 
 
 
-    console.log(facebookUrl);
-    // TODO - Does this work??
+    // console.log(facebookUrl);
     document.getElementById('facebookFeed').innerHTML = `
         <div class="fb-page" data-href="${facebookUrl}"
             data-tabs="timeline" data-height="" data-small-header="true"
