@@ -13,7 +13,7 @@
                 "Sunday: Closed"
             ],
             "imageUrl": "./images/Carlos_Quesadillas.jpg",
-            "logoUrl": "./otherImages/Carlos_Quesadilas_Logo.webp",
+            "logoUrl": "./images/Carlos_Quesadilas_Logo.webp",
             "menu": [
                 "Burrito: $10-$11",
                 "Quesadilla: $6.50-$9",
@@ -53,7 +53,7 @@
                 "Sunday: Closed"
             ],
             "imageUrl": "./images/Chicago_Treats.jpg",
-            "logoUrl": "./otherImages/Chicago_Treats_Logo.webp",
+            "logoUrl": "./images/Chicago_Treats_Logo.webp",
             "menu": [
                 "Italian Beef: $12",
                 "Chicago Dog: $9",
@@ -94,7 +94,7 @@
                 "Sunday: Closed"
             ],
             "imageUrl": "./images/Cheese_Steak_Factory.jpg",
-            "logoUrl": "./otherImages/Cheese_Steak_Factory_Logo.jpg",
+            "logoUrl": "./images/Cheese_Steak_Factory_Logo.jpg",
             "menu": [
                 "1/4 Pound: $7",
                 "1/3 Pound: $10",
@@ -126,7 +126,7 @@
                 "Sunday: Closed"
             ],
             "imageUrl": "./images/Macubana.jpg",
-            "logoUrl": "./otherImages/Macubana_Logo.jpg",
+            "logoUrl": "./images/Macubana_Logo.jpg",
             "menu": [
                 "Cubano Sandwich: $7",
                 "Tempura Mac Attack: $6",
