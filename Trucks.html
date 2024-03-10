@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carlos' Quesadillas</title>
+    <title>Trucks</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -32,7 +32,6 @@
             min-width: 250px;
         }
 
-        /* still working on display:___ (find one that matches the layout) */
         .bottomBarLinks {
             width: fit-content;
             display: grid;
@@ -48,7 +47,6 @@
 
 
 <header>
-    <!-- deleted  shadow-sm and bg-dark and navbar-dark-->
     <div class="navbar" style="background-color: #F1BE48;">
         <div class="container">
             <!-- sidebar -->
@@ -66,7 +64,6 @@
                     <link href="aboutUs.html">Food Truck Tracker</link>
                 </strong>
             </a>
-            <!-- link to about us page (the link isn't currently working (maybe something to do with strong, could make is a button))-->
             <a href="aboutUs.html" class="navbar-brand d-flex align-items-center">
                 <strong style="color: #363636;">
                     <link href="aboutUs.html">About Us</link>
@@ -83,7 +80,6 @@
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0"
         nonce="4pqyAKwx"></script>
-    <!-- one class was deleted in the div below, all functionality was added in-line (style="background-color: #C8102E; --bs-bg-opacity: 1;) This was donw to get the correct background color-->
     <div class="album py-5" style="background-color: #C8102E; --bs-bg-opacity: 1;">
         <div class="container" style="background-color: #C8102E;">
 
@@ -121,9 +117,6 @@
                 <!-- third card starts here (facebook) -->
                 <div class="col">
                     <div id="facebookFeed" class="card shadow-sm">
-                        <!-- removed data-width="240px", this allows  data-adapt-container-width to change the width depending on the size of 
-                            the container, However the page must be reloaded to set the size (this is a facebook thing). AKA the page will go offscreen
-                        if the page is shrunk, until the page is refershed and the width is corrected-->
                         <div class="fb-page" data-href="https://www.facebook.com/carlosquesadillas/"
                             data-tabs="timeline" data-height="" data-small-header="true"
                             data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"
@@ -139,8 +132,7 @@
             </div>
         </div>
     </div>
-    <!-- working in the yellow area -->
-    <!-- still working on this area -->
+
     <div class="bottomBar">
         <img id='footerLogo' class="BottomLogo" src="otherImages/Carlos_Quesadilas_Logo.webp">
 

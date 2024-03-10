@@ -6,12 +6,9 @@ let currTruck;
 fetch("./data.json").then(response => response.json()).then(allTrucks => loadTrucks(allTrucks));
 
 function loadTrucks(allTrucks) {
-    // console.log("Trucks:", allTrucks);
     currTruck = allTrucks.trucks[0];
-    // console.log("->", currTruck);
 
     function filterList(filterStr) {
-        // console.log("->", currTruck);
         var listContainer;
         if (!(listContainer = document.getElementById("truckListContainer"))) {
             return;
@@ -20,13 +17,11 @@ function loadTrucks(allTrucks) {
 
 
         function addTruck(truck) {
-            // console.log(truck);
             let name = truck.truckName;
             let truckID = truck.truckID;
             let logoUrl = truck.logoUrl;
             let locTagArray = truck.locationTags;
             let foodType = truck.filterTags[0]; //First one is always food type
-            // console.log(name, logoUrl, locTagArray, foodType);
 
 
             let listElementDiv = document.createElement('div');

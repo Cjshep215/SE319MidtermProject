@@ -2,7 +2,6 @@
 
 var searchString = new URLSearchParams(window.location.search);
 var currTruckID = searchString.get('currTruckID');
-// console.log(currTruckID);
 
 if (!currTruckID) {
     alert("No truck selcted");
@@ -12,7 +11,6 @@ if (!currTruckID) {
 
 
 function loadTrucks(allTrucks) {
-    // console.log("Trucks:", allTrucks);
     let currTruck = allTrucks.trucks[0];
     for (let i = 0; i < allTrucks.trucks.length; i++) {
         if (allTrucks.trucks[i].truckID == currTruckID) {
@@ -83,8 +81,6 @@ function loadTrucks(allTrucks) {
 
 
 
-    // console.log(menuArray);
-
     let menuDiv = document.getElementById("menuCard");
     menuDiv.replaceChildren();
 
@@ -97,7 +93,6 @@ function loadTrucks(allTrucks) {
 
 
 
-    // console.log(facebookUrl);
     document.getElementById('facebookFeed').innerHTML = `
         <div class="fb-page" data-href="${facebookUrl}"
             data-tabs="timeline" data-height="" data-small-header="true"
