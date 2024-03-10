@@ -81,7 +81,7 @@ function loadTrucks(allTrucks) {
             listElementDiv.replaceChildren(listGridDiv);
             listContainer.appendChild(listElementDiv);
 
-            document.getElementById(truckID).addEventListener('click', () => {window.open(`./trucks.html?currTruckID=${truckID}`, "_self");});
+            document.getElementById(truckID).addEventListener('click', () => {window.open(`Trucks.html?currTruckID=${truckID}`, "_self");});
 
         }
 
